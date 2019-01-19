@@ -2,14 +2,9 @@ body {
       font: 400 15px/1.8 Lato, sans-serif;
       color: #777;
   }
-  h3, h4 {
-      margin: 10px 0 30px 0;
-      letter-spacing: 10px;      
-      font-size: 20px;
-      color: #111;
-  }
+
   .container {
-      padding: 80px 120px;
+      width: 100%;
   }
   .person {
       border: 10px solid transparent;
@@ -28,8 +23,9 @@ body {
       margin: auto;
     }
     
-  .carousel-caption h3 {
+  .carousel-caption h2 {
       color: #fff !important;
+      
   }
   @media (max-width: 600px) {
     .carousel-caption {
@@ -71,12 +67,7 @@ body {
       background-color: #fff;
       color: #000;
   }
-  .modal-header, h4, .close {
-      background-color: #333;
-      color: #fff !important;
-      text-align: center;
-      font-size: 30px;
-  }
+ 
   .modal-header, .modal-body {
       padding: 40px 50px;
   }
@@ -85,25 +76,25 @@ body {
   }
  
   .navbar, .container-fluid {
-      font-family: Montserrat, sans-serif;
+      font-family: Raleway;
       margin-bottom: 0;
       background-color: #2d2d30;
       border: 0;
       font-size: 11px !important;
       letter-spacing: 4px;
       opacity: 0.9;
-      height: 70px;
+      height: 80px;
   }
   .navbar li a, .navbar .navbar-brand { 
       color: #d5d5d5 !important;
   }
   .navbar-nav li a:hover {
-      color: #fff !important;
+      color: #71bb7e !important;
   }
   .navbar-nav li.active a {
       color: #fff !important;
       background-color: #71bb7e !important;
-      height: 70px;
+      height: 80px;
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
@@ -116,7 +107,7 @@ body {
       color: #000 !important;
   }
   .dropdown-menu li a:hover {
-      background-color: red !important;
+      background-color: #fbd415 !important;
   }
   footer {
       background-color: #2d2d30;
@@ -184,6 +175,7 @@ body {
     .jumbotron{
     position: static;
     }
+
     #myBtn {
   display: none;
   position: fixed;
@@ -221,10 +213,66 @@ font-family: 'Quicksand', sans-serif;
 	width: 100%;
 	height: 80%;
 }
-    .ImageWrapper iframe {
+.ImageWrapper iframe {
 	position:static;
 	top: 0;
 	left: 0;
 	width: 80%;
 	height: 80%;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #36a4b5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #36a4b5;
+}
+
+h3, h5{
+    font-family: "quicksand";
+}
+
+p {
+    font-family: Raleway;
+}
+
+h4, H4{
+    font-family: Raleway;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 80%;
+    margin-top: 0;
+  }
 }
